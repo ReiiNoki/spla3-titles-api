@@ -1,0 +1,9 @@
+*.env
+*.ipynb
+*.json
+
+venv
+language/
+
+.vscode/
+__pycache__/
