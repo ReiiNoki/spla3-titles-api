@@ -73,4 +73,4 @@ def get_random_title(lang: str = None) -> dict:
     if lang in LANG_MAP.keys():
         lang = LANG_MAP[lang]
         return {"title": {"adjective": f"{adjs[idx][lang]}", "subject": f"{subs[idx][lang]}"}}
-    return {"title": {"adjective": f"{adjs[idx]}", "subject": f"{subs[idx]}"}}
+    return {"title": {"adjective": adjs[idx], "subject": subs[idx]}}
