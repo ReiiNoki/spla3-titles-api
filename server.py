@@ -42,9 +42,9 @@ LANG_MAP = {
     "fr-CA": "USfr"   # 法语（加拿大）
 }
 
-
 @app.get("/title/")
-def get_random_title(lang: str = Query(None, description=DESCRIPTION)) -> dict:
+@app.get("/title/{lang}")
+def get_random_title(lang: str = None) -> dict:
     
     global idx, adjs, subs
     if idx > 100:
