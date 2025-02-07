@@ -10,9 +10,10 @@
 
 ## API接口
 
-```python
+```pyhton
 BASE URL = https://ethnic-giulietta-reiinoki-0b7ecf44.koyeb.app/
 ```
+
 ### 1. 获取 **所有语言** 的随机称号
 
 ```http
@@ -68,13 +69,25 @@ GET /title/
 GET /title/{lang}
 ```
 
-例如：
+游戏官方语言：
 
-```http
-GET /title/zh-CN
-```
+- zh-CN - 中文（简体）
+- de - 德语
+- en - 英语（欧洲）
+- es - 西班牙语（欧洲）
+- fr - 法语（欧洲）
+- it - 意大利语
+- nl - 荷兰语
+- ru - 俄语
+- ja - 日语
+- ko - 韩语
+- zh-TW - 中文（繁体）
+- en-US - 英语（美国）
+- es-US - 西班牙语（美国）
+- fr-CA - 法语（加拿大）
 
-**返回示例：**
+
+**返回示例 （/title/zh-CN）：**
 
 ```json
 {
