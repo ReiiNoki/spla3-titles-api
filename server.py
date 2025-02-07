@@ -43,7 +43,7 @@ LANG_MAP = {
 }
 
 
-@app.get("/random-title/")
+@app.get("/title/")
 def get_random_title(lang: str = Query(None, description=DESCRIPTION)) -> dict:
     
     global idx, adjs, subs
