@@ -4,12 +4,15 @@
 
 本项目灵感来源于任天堂著名射击游戏 [斯普拉顿3 (Splatoon3)](https://www.nintendo.com/hk/switch/av5ja/index.html)，游戏中有抽取随机扭蛋获取称号的机制，我将在github找到的称号数据进行提取整合为这个API，欢迎各位使用并提出建议。本项目主要由Fastapi开发并部署在koyeb上，数据库部分则部署在MongoDB Altas上。
 
+## 测试前端
+
+[Splatoon3 Title Generator](https://reiinoki.pythonanywhere.com/)
+
 ## API接口
 
 ```http
 BASE URL = https://ethnic-giulietta-reiinoki-0b7ecf44.koyeb.app/
 ```
-
 ### 1. 获取 **所有语言** 的随机称号
 
 ```http
