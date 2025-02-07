@@ -1,10 +1,26 @@
 import os
 
 from dotenv import load_dotenv
-from fastapi import FastAPI, Query
+
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
 from pymongo import MongoClient
 
 app = FastAPI()
+
+# CORS 中间件解决跨域请求问题
+origins = [
+    "*"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 load_dotenv()
 ATLAS_URI = os.getenv('ATLAS_URI')
