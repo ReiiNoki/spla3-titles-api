@@ -11,7 +11,7 @@
 ## API接口
 
 ```pyhton
-BASE URL = https://ethnic-giulietta-reiinoki-0b7ecf44.koyeb.app/
+BASE_URL = https://ethnic-giulietta-reiinoki-0b7ecf44.koyeb.app/
 ```
 
 ### 1. 获取 **所有语言** 的随机称号
